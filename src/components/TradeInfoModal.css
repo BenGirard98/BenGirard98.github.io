@@ -1,0 +1,105 @@
+/* TradeInfoModal.css */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: grey;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+  border: 3px solid #333;
+}
+
+.modal-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 4px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-button:hover {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.info-button {
+  margin-top: 20px;
+  background-color: #ce4218;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  max-width: 300px;
+  align-self: center;
+}
+
+.modal-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 16px;
+}
+
+.modal-section {
+  flex: 1;
+  text-align: center;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+}
+
+.modal-divider {
+  width: 1px;
+  background-color: #ccc;
+  margin: 0 8px;
+}
+
+.modal-sub-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.modal-section li {
+  margin-bottom: 8px;
+  text-overflow: hidden;
+}
