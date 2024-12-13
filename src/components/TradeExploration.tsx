@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { trades } from "../data/trades";
 import TradeDetails from "./TradeDetails";
 import NavButton from "./NavButton";
@@ -8,7 +8,6 @@ import "./TradeExploration.css";
 
 const TradeExploration: React.FC = () => {
   const { tradeName } = useParams<{ tradeName: string }>();
-  const navigate = useNavigate();
   const trade = trades.find((trade) => trade.title === tradeName);
 
   if (!trade) {
